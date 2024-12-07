@@ -1,7 +1,3 @@
-Here’s a detailed `README.md` file for your GitHub project:
-
----
-
 # Plant Leaf Disease Detection System 🌱
 
 A Flask-based web application that uses a machine learning model to detect plant leaf diseases, helping users identify and manage plant health effectively.
