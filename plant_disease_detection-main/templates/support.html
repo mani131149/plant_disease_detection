@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - Plant Leaf Disease Detection</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #f3ec78, #af4261);
+            margin: 0;
+            padding: 0;
+            color: #fff;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+            margin: 0 15px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #34d399;
+        }
+
+        .nav-links {
+            display: flex;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 100px auto 0; /* Add top margin to account for the navbar */
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+            color: #f9fafb;
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            flex: 1 1 30%;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            background: rgba(0, 0, 0, 0.9);
+        }
+
+        .card h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #34d399;
+        }
+
+        .card p {
+            font-size: 1rem;
+            color: #e5e7eb;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="/">Plant Leaf Detection</a>
+        </div>
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/results">Results</a>
+            <a href="/support">Support</a>
+            <a href="/logout">Logout</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Support</h1>
+        <p>Learn more about each prediction label and how to care for your plants:</p>
+        <div class="card-container">
+            <div class="card">
+                <h2>Healthy</h2>
+                <p>This plant is healthy and requires no special care. Keep it well-watered and in sunlight.</p>
+            </div>
+            <div class="card">
+                <h2>Powdery</h2>
+                <p>Powdery disease detected. Apply fungicide to the affected area to prevent spreading.</p>
+            </div>
+            <div class="card">
+                <h2>Rust</h2>
+                <p>Rust disease detected. Immediate treatment is necessary. Use rust-specific treatments.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
